@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS connected -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_page">
+        <h2 class="headTop">GIVE EIDI TO YOUR LOVED ONES ❤️</h2>
+
+        <div id="page1" class="page1">
+            <h3 id="head3selectcountry">Select Country</h3>
+
+            <img src="./images/pakistan.jpg" alt="pakistan" onclick="Country(id)" id="pkr" class="countryImage">
+            <img src="./images/america.png" alt="pakistan" id="usdollor" class="countryImage opacity">
+            <img src="./images/india2.png" alt="pakistan" id="ind" class="countryImage opacity">
+            <img src="./images/bangladesh.png" alt="pakistan" id="saudiriyal" class="countryImage opacity">
+            <img src="./images/qatar.png" alt="pakistan" id="pkr" class="countryImage opacity">
+            <img src="./images/turkey.png" alt="pakistan" id="pkr" class="countryImage opacity">
+            <img src="./images/afghanistan.png" alt="pakistan" id="pkr" class="countryImage opacity">
+            <img src="./images/saudia.png" alt="pakistan" id="pkr" class="countryImage opacity">
+        </div>
+
+        <div id="page2" class="hide">
+            <input type="text" placeholder="Enter your name" id="enterYourName" 
+            class="input"><br><br>
+            <button type="button" onclick="enterName()" id="getNameBtn" 
+            class="btn">Enter</button>
+        </div>
+
+        <div id="page3" class="hide">
+            <button type="button" onclick="Eidi(id)" id="sendEidi" 
+            class="btn">Eidi send</button>
+            <button type="button" onclick="Eidi(id)" id="receiveEidi" 
+            class="btn">Eidi recieve</button>
+        </div>
+
+        <div id="page4" class="hide">
+            <input type="text" placeholder="Enter receiver name" 
+            id="enterReceiverName" class="input"><br><br>
+            <button type="button" onclick="receiverName()" class="btn">Enter</button>
+        </div>
+
+        <div id="page5" class="hide">
+            <input type="number" placeholder="Enter your id" class="input" id="userId"><br><br>
+            <p>Chosse your id b/w 1 to 3</p>
+
+            <button type="button" onclick="generateId()" class="btn">Enter</button>
+        </div>
+
+        <div id="page6" class="hide">
+            <div id="resultShow">
+                <span id="userName">user name</span> <span id="eidi"></span> <span>Eidi</span>
+                <span>Send to</span> <span id="receiverName">receiver name</span>
+            </div>
+            <h3 id="done" class="hide">Send successfully!</h3>
+            <p id="limit"></p>
+            <p id="limit1"></p>
+
+            <div id="noteImages">
+                <img src="./images/pkr10.jpeg" alt="noteImages" onclick="pkr10()" class="note">
+                <img src="./images/pkr20.jpeg" alt="noteImages" onclick="pkr20()" class="note">
+                <img src="./images/pkr50.jpeg" alt="noteImages" onclick="pkr50()" class="note">
+                <img src="./images/pkr100.jpeg" alt="noteImages" onclick="pkr100()"  class="note">
+                <img src="./images/pkr500.jpeg" alt="noteImages" onclick="pkr500()"  class="note">
+                <img src="./images/pkr1000.jpeg" alt="noteImages" onclick="pkr1000()" class="note">
+                <img src="./images/pkr5000.jpeg" alt="noteImages" onclick="pkr5000()" class="note">
+            </div>
+
+            <button type="button" class="btn" id="btn1" onclick="Send()">Send</button>
+        </div>
+
+        <div id="page7" class="hide">
+            <p id="para1" class="hide">Eidi not received in this id number: <span id="userIdNo"></span></p>
+
+            <p id="para2"></p>
+
+            <h3 id="para3" class="hide">Received successfully!</h3>
+        </div>
+    </div>
+
+    <!-- JavaScript connected -->
+    <script src="script.js"></script>
+
+</body>
+</html>
